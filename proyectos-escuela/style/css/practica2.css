@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+.caja1{
+  background: #000;
+  width: 60vw;
+  height: 40vh;
+  display:flex;
+  justify-content:space-around;
+  align-items:end;
+}
+.punto{
+  background:#0ff;
+  height: 100px;
+  width: 100px;
+  border-radius:50%;
+}
+.punto3{
+  align-self:center;
+}
