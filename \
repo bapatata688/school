@@ -13,9 +13,6 @@ a{
   margin-bottom:0.5vh;
   justify-content:space-evenly;
 }
-a:hover{
-  font-size:1.1em;
-}
 
 *{
   margin: 0;
@@ -66,14 +63,6 @@ aside{
   height: 60vh;
   width: 30vw;
 }
-ol{
-  margin-top:1vh;
-  margin-left:0.5vw;
-}
-li{
-  margin-left:1.6vw;
-  margin-top:6vh;
-}
 footer{
   background:#000;
 }
@@ -94,9 +83,5 @@ hr{
  main{
    /* display:block; */
  } 
-li{
-  margin-left:1.6vw;
-  margin-top:1vh;
-}
 
 }
