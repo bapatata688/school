@@ -72,10 +72,30 @@ ol{
 }
 li{
   margin-left:1.6vw;
-  margin-top:6vh;
+  margin-top:4vh;
+}
+p{
+  margin-top:5vh;
+  font-size:100%;
 }
 footer{
   background:#000;
+}
+img{
+  height:60vh;
+  width:70vw;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  img{
+    width:70vw;
+    height70vh;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  p{
+    font-size:1em;
+  }
 }
 @media screen and (max-width: 576px) {
   aside{
@@ -98,5 +118,12 @@ li{
   margin-left:1.6vw;
   margin-top:1vh;
 }
-
+p{
+  visibility: hidden;
+  width: 0%;
+}
+img{
+width:100vw;
+height:60vh;
+}
 }
