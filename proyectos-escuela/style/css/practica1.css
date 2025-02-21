@@ -57,6 +57,8 @@ main{
   display:flex;
 }
 section{
+  color:white;
+  font-style:cursive;
 background:#442450;
 height: 60vh;
 width: 70vw;
@@ -82,31 +84,47 @@ footer{
   background:#000;
 }
 img{
-  height:60vh;
+  height:57vh;
   width:70vw;
 }
+.imagen_celular{
+  display:none;
+}
 
+/* tablets */
 @media (min-width: 577px) and (max-width: 768px) {
   img{
     width:70vw;
-    height70vh;
+    height:58vh;
   }
+
 }
+/* laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
   p{
     font-size:1em;
   }
+  img{
+    height:58vh;
+  }
 }
+/* celulares */
 @media screen and (max-width: 576px) {
   aside{
     height: 20vh;
     width: 100vw;
     position: absolute;
-    bottom: 15vh;
+    bottom: 13vh;
   }
   section{
     width: 100vw;
  }
+   .imagen{
+    display:none;
+  }
+  .imagen_celular{
+    display:block;
+  }
 hr{
   width:70vw;
   margin-left:15vw;
