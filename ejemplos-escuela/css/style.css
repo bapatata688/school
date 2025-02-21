@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  padding:0 ;
+  background-size: border-box;
+}
+body{
+  background: linear-gradient(to left, black, skyblue);
+  color:#fff;
+}
