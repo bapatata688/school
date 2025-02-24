@@ -1,0 +1,482 @@
+/*Color de página*/
+html {
+    background-color: #808080;
+}
+
+/*Ajuste de header*/
+header {
+    width: 100%;
+    background: linear-gradient(to bottom, #f5f5dc, #808080);
+    border-bottom: solid 10px white;
+    display: grid;
+}
+
+
+/*Contenedor de logotipo*/
+.Logotipo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Logotipo en svg*/
+#Capa_1 {
+    width: 100%;
+    height: 80%;
+    flex-shrink: 1;
+}
+
+/*Ajuste del nombre comercial de la empresa*/
+.Titulo_principal {
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+    color: white;
+    animation: Titulo_animacion;
+    animation-duration: 2s;
+}
+
+/*Ajuste del subtitulo*/
+.Subtitulo {
+    color: white;
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+    animation: subt 4s;
+}
+
+
+/*Ajuste del menu navegador*/
+nav, nav ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/*Alto individual del navegador*/
+nav {
+    height: 20%;
+}
+
+
+/*Formato para cada elemento del navegador*/
+nav ul li {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    color: black;
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white, 0 0 10px white;
+    box-shadow: 10px 10px 10px black;
+}
+
+
+/*Efecto de toque del navegador*/
+nav ul li:hover {
+    transition: transform 250ms;
+    transform: skewX(-25deg) scale(1.3);
+    background-color: yellow;
+}
+
+
+/*Efecto de salida del cursor sobre navegador*/
+nav ul li:not(:hover) {
+    transition: transform 250ms;
+    transform: scale(1);
+    background-color: #fff;
+}
+
+
+/*Eliminacion del formato de link del navegador*/
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*Formato clave para todos los elementos del main*/
+main {
+    color: #ffee33;
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+}
+
+/*Definicion del formato de fondo del primer articulo*/
+.art1 {
+    background: url(../img/Paisaje1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/*Definicion del formato de fondo del segundo articulo*/
+.art2 {
+    background: url(../img/Paisaje2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/*Formato de texto extra para los parrafos*/
+main article p {
+    margin-top: 7%;
+    font-family: ubuntu;
+    border-radius: 20px;
+}
+
+/*Formato individual para la lista del main*/
+article ul li {
+    list-style: none;
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    animation: bord 600ms infinite;
+}
+
+@keyframes Titulo_animacion {
+    0% {
+        opacity: 0;
+    }
+    
+    30% {
+        text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white, 0 0 10px white;
+    }
+    
+    50% {
+        text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+        opacity: 20;
+    }
+    
+    70% {
+        text-shadow: 0 0 10px white, 0 0 10px white;
+        opacity: 40;
+    }
+    
+    90% {
+        text-shadow: 0 0 10px white;
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes subt {
+    0% {
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+        
+    }
+}
+
+@keyframes bord {
+    0% {
+        border: 5px dashed white;
+    }
+    
+    50% {
+        border: 5px dotted white;
+    }
+    
+    100% {
+        border: 5px dashed white;
+    }
+}
+
+@media (min-width: 2000px) {
+    
+    header {
+        text-align: left;
+        height: 55vh;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 40% 60%;
+    }
+    
+    .Logotipo {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .Titulo_principal {
+        font-size: 100px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .Subtitulo {
+        font-size: 110px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    nav ul li {
+        font-size: 50px;
+    }
+
+    main {
+        height: auto;
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    main article h1 {
+        font-size: 100px;
+    }
+    
+    main article p {
+        font-size: 70px;
+    }
+    
+    article ul li {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 800px) {
+    header {
+        text-align: left;
+        height: 55vh;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 40% 60%;
+    }
+    
+    .Titulo_principal {
+        font-size: 100px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .Logotipo {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    
+    .Subtitulo {
+        font-size: 50px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    nav ul li {
+        font-size: 30px;
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    main {
+        height: auto;
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    article {
+        height: 60vh;
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .art2 {
+        height: 100%;
+    }
+    
+    main article h1 {
+        padding-top: 15px;
+        font-size: 50px;
+    }
+    
+    main article p {
+        font-size: 30px;
+    }
+    
+    article ul li {
+        width: 20%;
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    header {
+        text-align: left;
+        height: 55vh;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 40% 60%;
+    }
+    
+    .Logotipo {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    
+    .Titulo_principal {
+        font-size: 75px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .Subtitulo {
+        margin-top: 0;
+        font-size: 40px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    nav ul li {
+        margin-top: 20px;
+        font-size: 30px;
+        width: 200px;
+    }
+
+    main {
+        height: auto;
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    main article h1 {
+        padding-top: 15px;
+        font-size: 50px;
+    }
+    
+    main article p {
+        font-size: 30px;
+    }
+    
+    article ul li {
+        width: 20%;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    header {
+        text-align: left;
+        height: 50vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 25% 25%;
+    }
+    
+    .Logotipo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .Titulo_principal {
+        font-size: 70px;
+        margin-top: 0;
+        text-align: center;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .Subtitulo {
+        margin-top: -10px;
+        font-size: 30px;
+        text-align: center;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    ul {
+        margin-left: -40px;
+    }
+    
+    li {
+        margin-top: 10px;
+    }
+    
+    nav ul li {
+        font-size: 30px;
+        width: 200px;
+    }
+
+    main {
+        height: auto;
+        width: 100%;
+    }
+    
+    main article h1 {
+        padding-top: 10px;
+        font-size: 35px;
+    }
+    
+    main article p {
+        font-size: 25px;
+    }
+    
+    article ul li {
+        width: 30%;
+    }
+}
+
+@media (max-width: 350px) {
+    header {
+        text-align: left;
+        height: 55vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 25% 25%;
+    }
+    
+    .Logotipo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .Titulo_principal {
+        font-size: 60px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .Subtitulo {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    nav ul li {
+        font-size: 30px;
+        width: 200px;
+    }
+
+    main article h1 {
+        padding-top: 10px;
+        font-size: 25px;
+    }
+    main article p {
+        font-size: 20px;
+    }
+    
+    article ul li {
+        width: 30%;
+    }
+}
+
+@media (max-height:500px) {
+    header {
+        text-align: left;
+        height: 55vh;
+        grid-template-columns: 30% 30% 40%;
+        grid-template-rows: 100%;
+    }
+    
+    .Logotipo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .Subtitulo {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .Titulo_principal {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+}
+
