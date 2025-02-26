@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ventana Modal Full</title>
-    <link href="css/modal.css" rel="stylesheet">
-  </head>
-  <body>
+    <link href="../css/modal.css" rel="stylesheet">
   <div id="modal">
     <section class="login">
       <form action="">
-        <label for="user"></label>
-        <input type="text">
-        <label for="contrasena"></label>
-        <input type="password">
+          <div class ="block1">
+            <label for="user">Usuario</label>
+            <input name="user" type="text" placeholder="ingrese el usuario">
+          </div>
+          <div class="block2">
+            <label for="contrasena">Contrasena</label>
+            <input type="password" name="contrasena" placeholder="ingrese la contrasena">
+          </div>
       </form>
     </section>
     <article class="botones">
-      <button></button>
-      <button></button>
+      <button>Iniciar</button>
+      <button>Cerrar</button>
     </article>
   </div>
   </body>
