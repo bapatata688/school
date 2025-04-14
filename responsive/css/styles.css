@@ -1,0 +1,59 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #222;
+  color: white;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem); /* tamaño adaptativo */
+}
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Breakpoint: móviles */
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Breakpoint: tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Breakpoint: laptops y desktops */
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
